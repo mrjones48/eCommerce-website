@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - RedStore</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!------ Header ------>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" width="125px" alt="RedStore Logo"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <img src="images/cart.png" width="30px" height="30px" alt="Shopping Cart">
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" alt="Menu Icon">
+        </div>
+    </div>
+
+    <!------ About Us Section ------>
+    <div class="about-section">
+        <div class="container">
+            <h1>About Us</h1>
+            <p>RedStore is a fictional project I started by following a YouTube tutorial to improve my web development skills. Through this project, I’ve gained a much better understanding of HTML, CSS, and JavaScript, particularly in building responsive websites. I’ve learned how to structure a website with clean, reusable code, style pages with CSS, and add interactive features like a toggle menu using JavaScript. I also had to troubleshoot some issues with the layout and navigation, which taught me how to break down problems and research solutions effectively. One challenge was ensuring the site looked good across different devices, which helped strengthen my problem-solving and debugging abilities.
+
+            While I’ve learned a lot from this project—such as using external libraries like Font Awesome—it still has a lot of work left to finish, and I look forward to refining it further as I continue developing my skills.</p>
+            
+            <h2>Our Mission</h2>
+            <p>I’m a dedicated student majoring in Computer Science and minoring in Spanish at Tennessee Technological University, passionate about deepening my expertise in web development and software engineering. Currently, I am actively seeking an internship or entry-level opportunity in web development or software engineering to gain hands-on experience and apply my skills to real-world projects. My Spanish minor enhances my ability to communicate effectively in diverse environments, broadening my perspective in an increasingly globalized tech industry. With a strong commitment to continuous learning and a drive to make a meaningful impact, I’m excited to contribute to innovative tech projects that challenge and inspire growth.</p>
+
+            <h2>What We Offer</h2>
+            <ul>
+                <li>High-quality activewear for men and women</li>
+                <li>Accessories to complement your workout routine</li>
+                <li>Exclusive products and discounts</li>
+                <li>Fast and reliable shipping</li>
+                <li>Exceptional customer service</li>
+            </ul>
+        </div>
+    </div>
+
+    <!------ Call to Action Section ------>
+    <div class="cta-section">
+        <h2>Join the RedStore Community</h2>
+        <p>Sign up now to get exclusive access to our latest products, discounts, and fitness tips. Be part of a growing community that values both style and performance.</p>
+        <a href="account.html" class="btn">Sign Up Now</a>
+    </div>
+
+    <!------ Footer ------>
+    <div class="footer">
+        <div class="container">
+            <div class="footer-col">
+                <h3>Download Our App</h3>
+                <p>Download our app for Android and iOS mobile devices.</p>
+                <div class="app-logo">
+                    <img src="images/play-store.png" alt="Google Play">
+                    <img src="images/app-store.png" alt="App Store">
+                </div>
+            </div>
+            <div class="footer-col">
+                <img src="images/logo-white.png" alt="RedStore Logo">
+                <p>Our Purpose Is To Sustainably Make The Pleasure and Benefits of Sports Accessible to the Many.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="#">Coupons</a></li>
+                    <li><a href="#">Blog Post</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Join Affiliate</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">X</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+    </div>
+
+    <!---- JavaScript for Toggle Menu ---->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        
+        function menutoggle() {
+            if(MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            } else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+</body>
+</html>
